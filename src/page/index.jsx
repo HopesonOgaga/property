@@ -72,14 +72,14 @@ const Index = () => {
           ></video>
 
           {/* GOLD CURVE VIDEO */}
-          <div className="absolute top-0 right-0 w-full md:w-1/2 h-full [clip-path:ellipse(100%_55%_at_100%_50%)] overflow-hidden">
+          <div className="absolute top-0 right-0 w-full md:w-1/2 h-full [clip-path:ellipse(100%_55%_at_100%_50%)] overflow-hidden hidden md:block">
             <video className="w-full h-full object-cover" autoPlay loop muted>
               <source src="/video/landscape.mp4" type="video/mp4" />
             </video>
           </div>
 
           {/* TEXT */}
-          <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center h-screen gap-8 p-6 md:mix-blend-difference md:mt-0 mt-14">
+          <div className="relative z-10 w-full md:w-1/2 flex flex-col justify-center h-screen gap-8 p-6 text-black md:mix-blend-difference md:mt-0 mt-14">
             <p className="text-4xl md:text-5xl font-semibold tracking-tight split">
               Developing landmarks for tomorrow.
             </p>
@@ -90,9 +90,11 @@ const Index = () => {
               Setting new standards in quality, design, and sustainability,
               creating environments where innovation meets heritage.
             </p>
-            <button className="w-40 h-12 bg-[#0A3D62] text-white rounded shadow-md hover:bg-[#082f4a] transition">
-              Let's connect
-            </button>
+            <a href="#form">
+              <button className="w-40 h-12 bg-[#0A3D62] text-white rounded shadow-md hover:bg-[#082f4a] transition">
+                Let's connect
+              </button>
+            </a>
           </div>
         </section>
 
@@ -154,7 +156,9 @@ const Index = () => {
             </section>
 
             {/* Form Section */}
-            <Form></Form>
+            <section id="form">
+              <Form></Form>
+            </section>
           </div>
         </section>
       </section>
