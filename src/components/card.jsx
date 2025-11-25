@@ -73,7 +73,7 @@ export default function Card() {
         </div>
       </div>
       {/* fourth */}
-      <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-10 max-w-7xl mx-auto mb-12">
+      <div className="flex flex-col md:flex-row-reverse justify-between items-center gap-10 max-w-7xl mx-auto ">
         {/* Text */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="flex flex-col gap-4 text-left">

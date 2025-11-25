@@ -4,6 +4,8 @@ import Footer from "../constant/footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Card from "../components/card";
+import Carousel from "../components/carousel";
+import Form from "../components/form";
 
 const Index = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -35,7 +37,7 @@ const Index = () => {
 
   return (
     <>
-      <section className="relative text-black md:p-12">
+      <section className="relative text-black md:p-12 roboto-default ">
         {/* HEADER */}
         <section
           className={`fixed top-0 left-0 w-full px-6 md:px-8 py-4 z-50 bg-white/60 backdrop-blur-xl shadow-sm transition-transform duration-300 ${
@@ -110,14 +112,14 @@ const Index = () => {
               real estate.
             </p>
             <p>
-              From the earliest days, we saw potential where others did not.
-              We invested in transforming urban spaces, revitalizing communities,
+              From the earliest days, we saw potential where others did not. We
+              invested in transforming urban spaces, revitalizing communities,
               and building projects that stand the test of time.
             </p>
             <p>
-              What began as bold investments in retail, tourism, and construction
-              evolved into a mission to develop iconic landmarks blending modern
-              innovation with timeless quality.
+              What began as bold investments in retail, tourism, and
+              construction evolved into a mission to develop iconic landmarks
+              blending modern innovation with timeless quality.
             </p>
             <p>
               With trust, expertise, and strong financial foundations, AT
@@ -132,50 +134,28 @@ const Index = () => {
         <Card></Card>
 
         {/* CAROUSEL */}
-        <section className="py-20">
-          {/* <Maincarousel /> */}
-          <div className="text-center text-gray-500">Carousel coming…</div>
+        <section className="p-4">
+          <Carousel></Carousel>
         </section>
 
         {/* CONTACT FORM */}
-        <section className="py-20 px-4 md:px-6 bg-white">
-          <form className="flex flex-col gap-6 p-6 md:p-10 max-w-xl mx-auto bg-white shadow-xl rounded-xl border border-gray-200">
-            <div className="flex flex-col md:flex-row gap-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#0A3D62]"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#0A3D62]"
-              />
-            </div>
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#0A3D62]"
-            />
-            <div>
-              <label className="block mb-2 font-medium">Your message</label>
-              <textarea
-                rows="5"
-                placeholder="Write your message..."
-                className="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-[#0A3D62]"
-              ></textarea>
-            </div>
-            <div className="flex items-start gap-3">
-              <input type="checkbox" className="h-5 w-5 accent-[#0A3D62]" />
-              <p className="text-sm opacity-80">
-                I declare that I have obtained my client's authorization for
-                their data to be used within the scope of ATP*.
+        <section className="py-16 px-4 md:px-8 lg:px-20 bg-white">
+          <div className="max-w-4xl mx-auto">
+            {/* Intro Section */}
+            <section className="flex flex-col gap-4 mb-10">
+              <p className="text-xl md:text-2xl font-semibold">Let’s connect</p>
+              <p className="text-sm md:text-base tracking-wide text-gray-700">
+                We believe in the power of meaningful connections. Do you have a
+                question, want to explore a partnership, or simply want to learn
+                more about what we do?, we’re here for you. Our team is ready to
+                listen, collaborate, and work with you to turn possibilities
+                into realities.
               </p>
-            </div>
-            <button className="w-full bg-[#0A3D62] text-white py-3 rounded-md hover:bg-[#082f4a] transition">
-              Submit
-            </button>
-          </form>
+            </section>
+
+            {/* Form Section */}
+            <Form></Form>
+          </div>
         </section>
       </section>
 

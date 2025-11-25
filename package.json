@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@tailwindcss/vite": "^4.1.17",
+    "emailjs-com": "^3.2.0",
     "embla-carousel-react": "^8.6.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.554.0",
